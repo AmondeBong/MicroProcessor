@@ -4,7 +4,7 @@
 
 int main(void)
 {
-    DDRB = 0xFF; //출력으로 설ㅓ
+    DDRB = 0xFF;
     while (1)
     {
         PORTB = 0xA0;    // 1011 0000
