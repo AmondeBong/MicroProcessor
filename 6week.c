@@ -21,7 +21,7 @@ int main()
             _delay_ms(1000);
             pattern_val >>= 2;
         }
-        if (pattern_val == 0x02)
+        if (pattern_val == 0x02) // 맨 마지막 패턴의 경우 없어지는 비트가 존재하므로 예외처리
         {
             pattern_val = 0x82;
             PORTB = pattern_val;
